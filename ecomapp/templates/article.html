@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for article in article %}
+{{article.title}}<br>
+{{article.content}}<br>
+{{article.category}}<br>
+{{article.product}}<br>
+{#<a href="{% url 'ecomapp:product' article.product.id %}">{{article.product}}</a><br>#}
+
+{% for product in article.products.all %}
+  <a href="{% url 'ecomapp:product' product.id %}">{{ product.name }}</a><br>
+                    {% endfor %}
+{% endfor %}
+</body>
+</html>

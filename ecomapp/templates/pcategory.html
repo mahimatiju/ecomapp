@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{pcat.name}}<br>
+{% for i in category %}
+{{i.name}}<br>
+<img src="{{i.Image.url}}"><br>
+
+{{i.description}}<br>
+{{i.price}}<br>
+
+{% endfor %}
+</body>
+</html>

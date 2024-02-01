@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for list in list %}
+<img  src="{{list.Image.url}}" alt="Card image cap"  height="250">
+  {{list.name}}
+{% endfor %}
+</body>
+</html>
